@@ -92,6 +92,8 @@ section {
 	}
 	&.subscribe {
 		background: lighten($green, 5%);
+		padding-left: 15px;
+		padding-right: 15px;
 		.container{
 			max-width: 700px;
 			margin-top: 25px;
