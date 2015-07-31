@@ -1,0 +1,272 @@
+// *******************************************
+// Colors
+// *******************************************
+
+$yellow: #f39c12;
+$blue: #47a3da;
+$green: #2ecc71;
+$grey: #444;
+
+// *******************************************
+// Navigation
+// *******************************************
+
+.navbar {
+	min-height: 50px;
+	margin-bottom: 0;
+    border: 0;
+
+	.navbar-brand {
+		padding: 0 15px;
+
+		img {
+			max-height: 100%;
+		}
+	}
+}
+
+.navbar-absolute-top, .navbar-absolute-bottom {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-absolute-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+// *******************************************
+// Body sections
+// *******************************************
+
+.hero {
+	background: no-repeat center/100% url("../images/hero3.jpeg");
+	padding-top: 100px;
+	color: $grey;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	a:hover {
+		text-decoration: none;
+	}
+}
+ section.header {
+ 	p {
+ 		margin-bottom: 15px;
+	    font-size: 21px;
+	    font-weight: 200;
+ 	}
+ 	padding-bottom: 0;
+ }
+
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+    border-color: $yellow;
+}
+
+section {
+	padding: 20px 0;
+	.featured{
+		padding: 25px 10px;
+
+		.thumbnail {
+		    max-width: 500px;
+		    margin: 0 auto;
+		}
+
+		h1, h2, h3, h4, h5, h6, p {
+			padding: 0 10px 10px;
+		}
+	}
+}
+
+.vertical-align {
+	.col-md-7, .col-md-5 {
+    	float:none;
+    	display:inline-block;
+    	vertical-align:middle;
+    	margin-right:-4px;
+	}
+}
+
+// Text highlights
+
+.blue-highlight {
+	color: $blue;
+}
+
+.yellow-highlight {
+	color: $yellow;
+}
+
+.green-highlight {
+	color: $green;
+}
+
+
+// Image slider
+
+.cbp-fwslider {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	position: relative;
+	margin: 0 0 10px;
+	overflow: hidden;
+	padding: 40px 0 60px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		white-space: nowrap;
+		list-style-type: none;
+
+		li {
+			transform: translateZ(0);
+			float: left;
+			display: block;
+			margin: 0;
+			padding: 0;
+
+			& > a,
+			& > div {
+				display: block;
+				text-align: center;
+				outline: none;
+			}
+
+			& > a img {
+				border: none;
+				display: block;
+				margin: 0 auto;
+				max-width: 75%;
+			}
+		}
+	}
+	nav span {
+		position: absolute;
+		top: 50%;
+		width: 50px;
+		height: 100px;
+		background: #fff;
+		color: $blue;
+		font-size: 47px;
+		text-align: center;
+		margin-top: -50px;
+		line-height: 100px;
+		cursor: pointer;
+		font-weight: normal;
+
+		&:hover {
+			color: #fff;
+			background: #378fc3;
+		}
+
+		&.cbp-fwnext {
+			right: 0px;
+		}
+
+		&.cbp-fwprev {
+			left: 0px;
+		}
+	}
+}
+
+.cbp-fwdots {
+	position: absolute;
+	bottom: 0px;
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+
+	span {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background: #ddd;
+		margin: 4px;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			background: #999;
+		}
+		&.cbp-fwcurrent {
+			background: $blue;
+			box-shadow: 0 0 0 2px $blue;
+			transition: box-shadow 0.2s ease-in-out;
+		}
+	}
+}
+
+// Subscribe
+
+section.subscribe {
+	background: $blue;
+	.container{
+		max-width: 700px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		padding: 20px;
+		background: rgba(0, 0, 0, 0.6)
+	}
+	h1 {
+		color: #ecf0f1;
+		margin-bottom: 25px;
+	}
+	.input-group {
+		margin-bottom: 12.5px;
+	}
+}
+
+// Footer
+
+section.footer {
+	padding: 0 0 20px;
+	background: $grey;
+	color: lighten($grey, 40%);
+
+	.container {
+		.row {
+			padding: 15px;
+		}
+		p {
+			font-size: 12px;
+			margin: 5px 0;
+		}
+	}
+	
+}
+
+// *******************************************
+// Responsive Styling
+// *******************************************
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.hero {
+		min-height: 500px;
+		padding-top: 175px;
+	}
+}
+
+/* Non-mobile first rendering */
+@media (max-width: 993px) {
+	section.footer {
+		.row {
+			p {
+				text-align: center;
+			}
+		}
+	}
+}
