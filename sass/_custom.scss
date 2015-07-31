@@ -69,6 +69,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 
 section {
 	padding: 20px 0;
+
 	.featured{
 		padding: 25px 10px;
 
@@ -80,6 +81,48 @@ section {
 		h1, h2, h3, h4, h5, h6, p {
 			padding: 0 10px 10px;
 		}
+	}
+	&.blue-section {
+		background-color: lighten($blue, 5%);
+		color: #fff;
+
+		.jumbotron {
+			background-color: inherit;
+		}
+	}
+	&.subscribe {
+		background: lighten($green, 5%);
+		.container{
+			max-width: 700px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			padding: 20px;
+			background: rgba(0, 0, 0, 0.6);
+		}
+		h1 {
+			color: #ecf0f1;
+			margin-bottom: 25px;
+			padding: 0 5px;
+		}
+		.input-group {
+			margin-bottom: 12.5px;
+		}
+	}
+	&.footer {
+		padding: 0 0 20px;
+		background: $grey;
+		color: lighten($grey, 40%);
+
+		.container {
+			.row {
+				padding: 15px;
+			}
+			p {
+				font-size: 12px;
+				margin: 5px 0;
+			}
+		}
+		
 	}
 }
 
@@ -96,14 +139,27 @@ section {
 
 .blue-highlight {
 	color: $blue;
+	font-weight: 900;
 }
 
 .yellow-highlight {
 	color: $yellow;
+	font-weight: 900;
+}
+
+.light-yellow-highlight {
+	color: lighten($yellow, 10%);
+	font-weight: 900;
 }
 
 .green-highlight {
 	color: $green;
+	font-weight: 900;
+}
+
+.grey-highlight {
+	color: $grey;
+	font-weight: 900;
 }
 
 
@@ -200,45 +256,7 @@ section {
 	}
 }
 
-// Subscribe
 
-section.subscribe {
-	background: $blue;
-	.container{
-		max-width: 700px;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		padding: 20px;
-		background: rgba(0, 0, 0, 0.6)
-	}
-	h1 {
-		color: #ecf0f1;
-		margin-bottom: 25px;
-		padding: 0 5px;
-	}
-	.input-group {
-		margin-bottom: 12.5px;
-	}
-}
-
-// Footer
-
-section.footer {
-	padding: 0 0 20px;
-	background: $grey;
-	color: lighten($grey, 40%);
-
-	.container {
-		.row {
-			padding: 15px;
-		}
-		p {
-			font-size: 12px;
-			margin: 5px 0;
-		}
-	}
-	
-}
 
 // *******************************************
 // Responsive Styling
