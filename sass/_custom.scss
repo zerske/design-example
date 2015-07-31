@@ -64,8 +64,8 @@ $grey: #444;
  }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: $yellow;
-}
+	border-color: lighten($grey, 45%);
+} 
 
 section {
 	padding: 20px 0;
