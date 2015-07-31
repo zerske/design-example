@@ -43,11 +43,7 @@ $grey: #444;
 // *******************************************
 
 .hero {
-	background: url("../images/hero3.jpeg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: no-repeat center/100% url("../images/hero3.jpeg");
 	padding-top: 100px;
 	color: $grey;
 }
@@ -252,7 +248,7 @@ section.footer {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {  }
@@ -261,12 +257,13 @@ section.footer {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.hero {
+
 		min-height: 500px;
 		padding-top: 175px;
 	}
 }
 
-/* Non-mobile first rendering */
+/* Non-mobile-first rendering */
 @media (max-width: 993px) {
 	section.footer {
 		.row {
@@ -274,5 +271,12 @@ section.footer {
 				text-align: center;
 			}
 		}
+	}
+}
+
+/* Special breakpoint consideration for hero image */
+@media (max-width: 407px) {
+	.hero {
+		background: no-repeat center/auto 100% url("../images/hero3.jpeg");
 	}
 }
