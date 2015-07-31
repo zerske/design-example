@@ -257,13 +257,31 @@ section.footer {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.hero {
-
 		min-height: 500px;
 		padding-top: 175px;
 	}
 }
 
 /* Non-mobile-first rendering */
+
+/* Special breakpoint consideration for hero image */
+@media (max-width: 407px) {
+	.hero {
+		background: no-repeat center/auto 100% url("../images/hero3.jpeg");
+	}
+}
+
+@media (max-width: 767px) {
+	.cbp-fwslider nav span{
+		color: #378fc3;
+	    background: transparent;
+		&:hover {
+		    color: #378fc3;
+		    background: transparent;
+		}
+	}
+}
+
 @media (max-width: 993px) {
 	section.footer {
 		.row {
@@ -274,9 +292,3 @@ section.footer {
 	}
 }
 
-/* Special breakpoint consideration for hero image */
-@media (max-width: 407px) {
-	.hero {
-		background: no-repeat center/auto 100% url("../images/hero3.jpeg");
-	}
-}

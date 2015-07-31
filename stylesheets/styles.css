@@ -9018,16 +9018,28 @@ section.footer .container p {
   }
 }
 /* Non-mobile-first rendering */
-@media (max-width: 993px) {
-  /* line 270, ../sass/_custom.scss */
-  section.footer .row p {
-    text-align: center;
-  }
-}
 /* Special breakpoint consideration for hero image */
 @media (max-width: 407px) {
-  /* line 279, ../sass/_custom.scss */
+  /* line 269, ../sass/_custom.scss */
   .hero {
     background: no-repeat center/auto 100% url("../images/hero3.jpeg");
+  }
+}
+@media (max-width: 767px) {
+  /* line 275, ../sass/_custom.scss */
+  .cbp-fwslider nav span {
+    color: #378fc3;
+    background: transparent;
+  }
+  /* line 278, ../sass/_custom.scss */
+  .cbp-fwslider nav span:hover {
+    color: #378fc3;
+    background: transparent;
+  }
+}
+@media (max-width: 993px) {
+  /* line 288, ../sass/_custom.scss */
+  section.footer .row p {
+    text-align: center;
   }
 }
