@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1438274943);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1438274943#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1438274943) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1438274943) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1438274943) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1438274943#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1438314043);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1438314043#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1438314043) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1438314043) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1438314043) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1438314043#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8868,34 +8868,35 @@ section.subscribe .container {
   margin-bottom: 25px;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
 }
-/* line 102, ../sass/_custom.scss */
+/* line 103, ../sass/_custom.scss */
 section.subscribe h1 {
   color: #ecf0f1;
   margin-bottom: 25px;
   padding: 0 5px;
 }
-/* line 107, ../sass/_custom.scss */
+/* line 108, ../sass/_custom.scss */
 section.subscribe .input-group {
   margin-bottom: 12.5px;
 }
-/* line 111, ../sass/_custom.scss */
+/* line 112, ../sass/_custom.scss */
 section.footer {
   padding: 0 0 20px;
   background: #444;
   color: #aaaaaa;
 }
-/* line 117, ../sass/_custom.scss */
+/* line 118, ../sass/_custom.scss */
 section.footer .container .row {
   padding: 15px;
 }
-/* line 120, ../sass/_custom.scss */
+/* line 121, ../sass/_custom.scss */
 section.footer .container p {
   font-size: 12px;
   margin: 5px 0;
 }
 
-/* line 130, ../sass/_custom.scss */
+/* line 131, ../sass/_custom.scss */
 .vertical-align .col-md-7, .vertical-align .col-md-5 {
   float: none;
   display: inline-block;
@@ -8903,37 +8904,37 @@ section.footer .container p {
   margin-right: -4px;
 }
 
-/* line 140, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 .blue-highlight {
   color: #47a3da;
   font-weight: 900;
 }
 
-/* line 145, ../sass/_custom.scss */
+/* line 146, ../sass/_custom.scss */
 .yellow-highlight {
   color: #f39c12;
   font-weight: 900;
 }
 
-/* line 150, ../sass/_custom.scss */
+/* line 151, ../sass/_custom.scss */
 .light-yellow-highlight {
   color: #f5b043;
   font-weight: 900;
 }
 
-/* line 155, ../sass/_custom.scss */
+/* line 156, ../sass/_custom.scss */
 .green-highlight {
   color: #2ecc71;
   font-weight: 900;
 }
 
-/* line 160, ../sass/_custom.scss */
+/* line 161, ../sass/_custom.scss */
 .grey-highlight {
   color: #444;
   font-weight: 900;
 }
 
-/* line 168, ../sass/_custom.scss */
+/* line 169, ../sass/_custom.scss */
 .cbp-fwslider {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   position: relative;
@@ -8941,14 +8942,14 @@ section.footer .container p {
   overflow: hidden;
   padding: 40px 0 60px;
 }
-/* line 175, ../sass/_custom.scss */
+/* line 176, ../sass/_custom.scss */
 .cbp-fwslider ul {
   margin: 0;
   padding: 0;
   white-space: nowrap;
   list-style-type: none;
 }
-/* line 181, ../sass/_custom.scss */
+/* line 182, ../sass/_custom.scss */
 .cbp-fwslider ul li {
   transform: translateZ(0);
   float: left;
@@ -8956,20 +8957,20 @@ section.footer .container p {
   margin: 0;
   padding: 0;
 }
-/* line 188, ../sass/_custom.scss */
+/* line 189, ../sass/_custom.scss */
 .cbp-fwslider ul li > a, .cbp-fwslider ul li > div {
   display: block;
   text-align: center;
   outline: none;
 }
-/* line 195, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 .cbp-fwslider ul li > a img {
   border: none;
   display: block;
   margin: 0 auto;
   max-width: 75%;
 }
-/* line 203, ../sass/_custom.scss */
+/* line 204, ../sass/_custom.scss */
 .cbp-fwslider nav span {
   position: absolute;
   top: 50%;
@@ -8984,21 +8985,21 @@ section.footer .container p {
   cursor: pointer;
   font-weight: normal;
 }
-/* line 217, ../sass/_custom.scss */
+/* line 218, ../sass/_custom.scss */
 .cbp-fwslider nav span:hover {
   color: #fff;
   background: #378fc3;
 }
-/* line 222, ../sass/_custom.scss */
+/* line 223, ../sass/_custom.scss */
 .cbp-fwslider nav span.cbp-fwnext {
   right: 0px;
 }
-/* line 226, ../sass/_custom.scss */
+/* line 227, ../sass/_custom.scss */
 .cbp-fwslider nav span.cbp-fwprev {
   left: 0px;
 }
 
-/* line 232, ../sass/_custom.scss */
+/* line 233, ../sass/_custom.scss */
 .cbp-fwdots {
   position: absolute;
   bottom: 0px;
@@ -9006,7 +9007,7 @@ section.footer .container p {
   text-align: center;
   width: 100%;
 }
-/* line 239, ../sass/_custom.scss */
+/* line 240, ../sass/_custom.scss */
 .cbp-fwdots span {
   display: inline-block;
   width: 10px;
@@ -9016,11 +9017,11 @@ section.footer .container p {
   border-radius: 50%;
   cursor: pointer;
 }
-/* line 248, ../sass/_custom.scss */
+/* line 249, ../sass/_custom.scss */
 .cbp-fwdots span:hover {
   background: #999;
 }
-/* line 251, ../sass/_custom.scss */
+/* line 252, ../sass/_custom.scss */
 .cbp-fwdots span.cbp-fwcurrent {
   background: #47a3da;
   box-shadow: 0 0 0 2px #47a3da;
@@ -9033,7 +9034,7 @@ section.footer .container p {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* line 277, ../sass/_custom.scss */
+  /* line 278, ../sass/_custom.scss */
   .hero {
     min-height: 500px;
     padding-top: 175px;
@@ -9042,25 +9043,25 @@ section.footer .container p {
 /* Non-mobile-first rendering */
 /* Special breakpoint consideration for hero image */
 @media (max-width: 407px) {
-  /* line 287, ../sass/_custom.scss */
+  /* line 288, ../sass/_custom.scss */
   .hero {
     background: no-repeat center/auto 100% url("../images/hero3.jpeg");
   }
 }
 @media (max-width: 767px) {
-  /* line 293, ../sass/_custom.scss */
+  /* line 294, ../sass/_custom.scss */
   .cbp-fwslider nav span {
     color: #378fc3;
     background: transparent;
   }
-  /* line 296, ../sass/_custom.scss */
+  /* line 297, ../sass/_custom.scss */
   .cbp-fwslider nav span:hover {
     color: #378fc3;
     background: transparent;
   }
 }
 @media (max-width: 993px) {
-  /* line 306, ../sass/_custom.scss */
+  /* line 307, ../sass/_custom.scss */
   section.footer .row p {
     text-align: center;
   }
